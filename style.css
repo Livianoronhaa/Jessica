@@ -1,0 +1,82 @@
+body {
+    background-color:rgb(246, 237, 255);
+    justify-items: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+p {
+    color: rgb(63, 34, 98);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+input {
+    width: 300px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: rgb(63, 34, 98) ;
+    font-size: 18px;
+}
+
+.mainn {
+    align-items: start;
+}
+
+.title {
+    background-color: rgb(63, 34, 98);
+    color: beige;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    font-size: 24px;
+}
+
+.inputs {
+gap: 2px;
+}
+
+.inputs p {
+    color: rgb(63, 34, 98);
+}
+
+
+select {
+    width: 300px;
+    height: 30px;
+}
+
+button {
+    width: 300px;
+    height: 30px;
+    color: beige;
+    background-color: rgb(63, 34, 98);
+    margin-top: 30px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+    
+.check {
+  align-items: start;
+  gap: 10px;
+  font-family: Arial, sans-serif;
+  margin-bottom: 1rem;
+}
+
+.check, label {
+    color: rgb(63, 34, 98);
+    font-size: 14px;
+}
+
+.confirmarPres {
+  width: 20px;
+  height: 20px;
+  accent-color: rgb(63, 34, 98);
+  cursor: pointer;
+}
