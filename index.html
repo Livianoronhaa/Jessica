@@ -1,46 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trabalho jessica</title>
+    <title>Trabalho Jéssica</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="mainn">
+    <p id="dataHora"></p>
+    <h3>Preencha as informações para inscrever-se no evento de Tecnologia do Ceará!</h3>
+    <div class="container">
         <h1 class="title">Formulário de Cadastro</h1>
-        <h3>Inscreva-se no evento! </h3>
-    <div class="inputs">
-        <p>Digite seu nome</p>
-        <input type="text" placeholder="Nome">
+        <div class="input-group">
+            <p>Digite seu nome:</p>
+            <input type="text" id="nome" placeholder="Nome">
+        </div>
+
+        <div class="input-group">
+            <p>Digite seu e-mail:</p>
+            <input type="email" id="email" placeholder="E-mail">
+        </div>
+
+        <div class="check">
+            <input type="checkbox" id="presenca" class="checkbox">
+            <label for="presenca">Confirmar presença</label>
+        </div>
+
+        <div id="extraFields" style="display: none;">
+            <div class="input-group">
+                <p>Selecione seu tipo de ingresso:</p>
+                <select id="ingresso">
+                    <option value="Padrão" selected>Padrão</option>
+                    <option value="VIP">VIP</option>
+                    <option value="Convidado">Convidado</option>
+                </select>
+            </div>
+
+            <div class="check">
+                <input type="checkbox" id="novidades" class="checkbox">
+                <label for="novidades">Deseja receber novidades do evento?</label>
+            </div>
+        </div>
+
+        <div class="input-group" id="assuntoField" style="display: none;">
+            <p>Qual assunto te interessa?</p>
+            <select id="assunto">
+                <option value="Frontend" selected>Frontend</option>
+                <option value="Backend">Backend</option>
+                <option value="IA">Inteligência Artificial</option>
+            </select>
     </div>
 
-    <div class="inputs">
-        <p>Digite seu e-mail:</p>
-        <input type="text" placeholder="E-mail">
-    </div>
-    
-  <div class="check">
-  <p>Confirmar presença</p>
-  <input type="checkbox" id="presenca" class="confirmarPres" name="presenca">
-  <label for="presenca">Confirmar presença</label>
-</div>
 
 
-    <div>
-        <p>Selecione seu tipo de ingresso:</p>
-       <select>
-        <option value="" selected>Padrão</option>
-        <option value="">VIP</option>
-        <option value="">Convidado</option>
-    </select> 
+    <button id="btnCadastrar">Confirmar cadastro</button>
     </div>
 
-            <button>Cadastrar participante</button>
+    <div id="listaCadastros"></div>
 
-    
-
-    </div>
-    
+    <script src="script.js"></script>
 </body>
+
 </html>
